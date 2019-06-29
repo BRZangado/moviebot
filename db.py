@@ -15,6 +15,7 @@ class Movie(Base):
     __tablename__ = 'movies'
 
     id = Column(Integer, primary_key=True)
+    chat = Column(Integer)
     name = Column(String)
     status = Column(String)
 
@@ -27,6 +28,7 @@ class Serie(Base):
     __tablename__ = 'series'
 
     id = Column(Integer, primary_key=True)
+    chat = Column(Integer)
     name = Column(String)
     status = Column(String)
 
